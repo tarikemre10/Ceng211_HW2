@@ -24,6 +24,17 @@ public class Vehicle {
                 default       : return 0.0;
             }
         }
+        
+        public MonthOfSale valueOf(String v) {
+            switch (v) {
+                case "January"  : return January;
+                case "May"      : return May;
+                case "August"   : return August;
+                case "October"  : return October;
+                case "December" : return December;
+                default       : return January;
+            }
+        }
     }
 
     public enum CityOfSale {
